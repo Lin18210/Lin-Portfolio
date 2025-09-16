@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Custom dark geometric background pattern */
+.bg-background {
+  background-color: #101010;
+  background-image:
+    repeating-radial-gradient(circle at 0 0, #232323 0, #232323 1px, transparent 1px, transparent 100px),
+    repeating-radial-gradient(circle at 100px 100px, #232323 0, #232323 1px, transparent 1px, transparent 100px);
+  background-size: 200px 200px;
+}
+
+body {
+  background-color: #101010;
+  background-image:
+    repeating-radial-gradient(circle at 0 0, #232323 0, #232323 1px, transparent 1px, transparent 100px),
+    repeating-radial-gradient(circle at 100px 100px, #232323 0, #232323 1px, transparent 1px, transparent 100px);
+  background-size: 200px 200px;
+  color: #e0e0e0;
+}
+
+/* Optional: Make sure all sections use transparent backgrounds */
+section {
+  background: transparent;
+}
+
+/* Optional: Enhance text color for contrast */
+.text-foreground, .text-primary {
+  color: #e0e0e0;
+}
+
+/* Optional: Button and accent colors */
+.bg-primary, .hover\:bg-primary\/10 {
+  background-color: #3b82f6 !important;
+}
+.text-primary {
+  color: #3b82f6 !important;
+}
+.bg-accent {
+  background-color: #6366f1 !important;
+}
+.text-accent {
+  color: #6366f1 !important;
+}
+.bg-secondary {
+  background-color: #1e293b !important;
+}
+.text-secondary {
+  color: #a3e635 !important;
+}
+
+/* Button styles for dark theme */
+button,
+.btn,
+.bg-primary {
+  background-color: #101010;
+  color: #e0e0e0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+button:hover,
+.btn:hover,
+.bg-primary:hover {
+  background-color: #232323;
+  color: #fff;
+  border-color: #232323;
+}
+
+/* For outlined buttons */
+button.outline,
+.btn.outline {
+  background: transparent;
+  color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+}
+
+button.outline:hover,
+.btn.outline:hover {
+  background: #232323;
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
