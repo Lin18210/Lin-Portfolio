@@ -27,7 +27,7 @@ export const Header = () => {
     <header className="fixed top-0 w-full bg-background/90 backdrop-blur-md z-50 border-b border-border/50">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
-          <h1 className="text-xl font-bold">Lin's Port</h1>
+          <h1 className="text-xl font-bold">Lin's Portal</h1>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Button
